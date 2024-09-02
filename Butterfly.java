@@ -1,34 +1,40 @@
 public class Butterfly {
     public static void main(String[] args) {
-        int n = 4;
+
+        int m=3;
+
 //upper part
-        for(int i=1; i<=n; i++) {
-            for(int j=1; j<=i; j++) {
+        for (int i=0; i<=m; i++){
+
+            for(int j=0; j<=i;j++)
                 System.out.print("*");
-            }
-            int spaces = 2 * (n-i);
-            for(int j=1; j<=spaces; j++) {
+
+            int space=2*m-2*i ;
+            for (int j=0; j<=space; j++)
                 System.out.print(" ");
-            }
-            for(int j=1; j<=i; j++) {
+
+            for(int j=0; j<=i;j++)
                 System.out.print("*");
-            }
             System.out.println();
         }
+
 //lower part
-        for(int i=n; i>=1; i--) {
-            for(int j=1; j<=i; j++) {
+
+        for (int i=m; i>=0; i--){
+
+            for(int j=0; j<=i;j++)
                 System.out.print("*");
-            }
-            int spaces = 2 * (n-i);
-            for(int j=1; j<=spaces; j++) {
+            
+            int space=2*m-2*i ;
+            for (int j=0; j<=space; j++)
                 System.out.print(" ");
-            }
-            for(int j=1; j<=i; j++) {
+
+            for(int j=0; j<=i;j++)
                 System.out.print("*");
-            }
             System.out.println();
+
         }
+
     }
 }
 
